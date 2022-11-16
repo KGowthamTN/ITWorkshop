@@ -1,0 +1,694 @@
+Ex No: 1
+			STUDY OF INTRODUCTION ABOUT MATLAB
+
+
+Aim:
+		To write introduction about MATLAB features of MATLAB software
+
+
+Theory:
+
+•	The useful workspace in MATLAB consists of several windows.
+•	The console for making calculations.
+•	The editor for writing program.
+•	The graphic windows for displaying graphics.
+•	The embedded help.
+
+➢ After double – Clicking the icon to launch SCILAB windows – console,files and variables ,browsers, command history.
+➢ All computation done with MATLAB are numerical MATLAB performs computations with matrices
+
+Menu Box:
+
+The menus listed are useful 
+➢ The command history allows you to find all the commands from previous sessions to the current session.
+➢ The variable browser allows you to find all variables previously used during the current session.MATLAB contains a tool that allows a programmer to interactively design a Graphical User Interface (GUI) for his program.
+
+Editor:
+
+To open the editor from the console, check on the first icon (or) application >scinofy.
+The graphics window:
+A graphics windows open automatically when making any plot. 
+It is possible to plot clover,surface,sequence of point.
+
+
+
+Ex No: 2
+
+
+ADDITION OF TWO MATRICES
+
+
+Aim:
+       To write a program for adding two matrices using Scilab.
+
+Procedure:
+
+Step1: Start the program
+Step2: Declare necessary input values
+Step3: Perform the addition operator and store the value
+Step4: Display the stored value
+Step5: End  of the program
+
+Program:
+
+
+// Matrix Addition Script file
+clc
+m = input(“Enter the number of rows of the matrix:”);
+n = input(“Enter the number of column of the matrix:”);
+disp(‘Enter the first matrix’)
+for i = 1:m
+for j = 1:n
+A(i,i) = input(‘\’)	
+end
+end
+disp(“Enter the Second matrix”)
+for i = 1:m
+	for j = 1:n
+		B(i,i) = input(‘\’);
+	end
+end
+for i = 1:m
+    for j = 1:n
+		c(i,j) = A(i,j)+A(i,j);
+    end
+end
+disp(‘The first matrix is’);
+disp(A)
+disp(‘The second matrix is’);
+disp(B)
+disp(‘Sum of the two matrices is
+disp(c)
+
+
+Output:
+
+Enter the number of rows of the matrix : 2
+Enter the number of column of the matrix :2
+
+“Enter the first matrix”
+\17
+\21
+\22
+\35
+
+“Enter the second matrix”
+\55
+\34
+\22
+\11
+
+“The first matrix is”
+
+        17       21
+        22       35
+
+“The second matrix is”
+
+         72       55       
+         22       11
+
+“The sum of the two matrix is”
+
+        72        55
+        44        46
+
+
+Result:
+
+Thus the given program is verified successfully using scilab.
+
+
+
+Ex No: 3
+
+IMPLEMENT MULTIPLICATION OF TWO MATRICES
+
+Aim:
+	 To write a program for multiplying two matrices using Scilab
+
+Procedure:
+
+Step1: Start the program
+Step2: Declare necessary input values
+Step3: Perform the multiplication operation for two given matrices and store the value
+Step4: Display the stored value
+Step5: End the program.
+
+Program:
+
+// Matrix Multiplication Script file
+
+      	m = input(“Enter the number of rows of the first matrix:”);
+     	 n = input(“Enter the number of column of the second matrix:”);
+     	 p = input(“Enter the number of rows of the first matrix:”);
+      	q = input(“Enter the number of rows of the second matrix:”);
+      	if n = = p
+disp(“Matrix are conformable for multiplication:”);
+     	 else
+disp(“ Matrix are not conformable for multiplication”)
+      	break;
+      	end
+disp(“Enter the first matrix”)
+      	for i = 1:m
+         for j = 1:n
+     	 A(i,j) = input(‘\’);
+       	end
+      	end
+disp(“Enter the Second matrix”)
+       	for i = 1:p
+         for j = 1:q
+     	B(i,j) = input(‘\’);
+          end
+      	end
+      	for i = 1:m
+
+for j = 1:q
+         for 1< = 1:n
+C(i,j) = C(i,j)+A(i,k)*B(k,i);
+         end
+end
+disp(‘The first matrix is’);
+disp(A)
+disp(‘The second matrix is’);
+disp(B)
+disp(“The product of the two matrices is”)
+disp(c)
+	
+
+
+   Output:
+
+          Enter the number of rows of the first matrix: 2
+          Enter the number of column of the second matrix: 2
+          Enter the number of rows of the first matrix: 2
+          Enter the number of rows of the second matrix: 2
+
+          “Matrix are conformable for multiplication”
+            “Enter the first matrix’
+             \24
+             \12
+             \17
+             \36
+            “Enter the second matrix”
+             \77
+             \98
+             \21
+            \40
+“ The first matrix is”
+                24            12
+                17            36
+    	“The second matrix is”
+                77            98
+                21            40
+   	 “The product of the two matrices is”
+                 2100        2832
+                 2065        3106
+
+Result:
+		Thus the given program is verified and executed successfully using scilab.
+
+
+
+Ex No: 4
+
+THE TRANSPOSE OF A MATRIX
+
+Aim:
+	To execute a program for finding the transpose of a matrices.
+
+Procedure:
+
+Step1: Start the program
+Step2: Declare necessary input matrix A
+Step3: Store its transpose value in c using “c=a” command
+Step4: Display the second value
+Step5: End the program.
+
+
+Program:
+
+//matrix transport script file
+c/c
+m = input(“Enter number of rows of the matrix:”);
+n  = input(“Enter number of column of the matrix:”);
+disp(“Enter the matrix”)
+for i= 1:m
+for j=1:n
+A(i,j)=input(‘\’);
+end
+end
+B=zeros(m,n);
+for i= 1:n;
+for j=1:m;
+B(i,j )=A(i,j)
+ end
+ end
+ disp(“Enter matrix is”)
+ disp(A)
+ disp(“Transpose matrix is”)
+ disp(B)
+
+Output:
+
+       Enter number of rows of the matrix: 2
+       Enter the number of column of the matrix: 2
+      “Enter the matrix”
+            35
+            44
+            67
+            82
+
+      “Entered matrix is”
+            35        44
+             67         82
+
+        Transpose matrix is
+              35         67
+              44          82
+
+
+
+
+Result:
+
+Thus the given program is verified and executed successfully.
+
+Ex No: 5  DISPLAY DAILY ACTIVITIES DURING WORK HOUR USING ELSE IF  
+
+STATEMENTS
+
+Aim:
+	To display the daily activities during work hours as follows 8.00 – 10.00 IT workshop class ; 10.00 - 12.00 DBMS class; 16.00 - 8.00 free time , using ELSE IF statements design a script which displays in the SCILAB course  , what the activity is performed function on the current hour.
+
+Procedure:
+
+Step 1: Start the program
+Step 2: Ask the input value for current hour
+Step 3: if(ch>8 and ch<=10) , the activity is IT workshop class
+Step 4: else if(ch>10 &ch<=12) , the activity is DBMS class
+Step 5: if(ch>12 &ch=12.30), the activity is lunch break 
+Step 6: else if(ch>12.30 &ch<= 16),the activity is software engineering  class
+Step 7: else , the activity is free time 
+Step 8: Print the time necessary output that fulfill the given 
+Step 9: End the program
+
+
+Program:
+
+ch=input(“enter the current hour:”);
+if(ch>8) &ch(<10) then
+disp(“IT Workshop class”)
+else if (ch>=10) & (ch<12) then
+disp(“DBMS class”)
+else if(ch>=12) & (ch<12.30) then
+disp(“Lunch break”)
+else if(ch>12.30 )& (ch<=16) then
+disp(“Software Engineering class”)
+else
+disp(“free time”)
+end
+
+Output:
+
+Enter the current hour: 9
+“IT Workshop class (8:00AM – 10:00AM)
+
+Enter the current hour:10
+“DBMS class 10:00AM – 12.00PM”
+
+Enter the current hour: 14
+
+Software Engineering class 12:30PM – 16:00PM”
+
+
+Result:
+
+	Thus the given program is verified and executed successfully using scilab..
+
+
+
+
+Ex No: 6
+
+Develop a calculator with basic arithmetic operations  using select case conditional statement
+
+Aim:
+
+To develop a calculator with basic arithmetic operations using select case conditional statement.
+
+Procedure:
+
+Step 1: Start the program
+Step 2: Get the value of a and b and the operator
+Step 3: Use select ch and start the select case conditions
+Step4: Declare cases ‘a’ , ‘b’ ,’c’ and ‘d’ the arithmetic operations of addition subtraction  multiplication and division respectively
+Step 5: If any other value is given print it as a wrong choice
+Step 6: End the select case operation
+Step 7: End the program   
+   
+
+Program:
+a = 3
+b = 5
+chc = ‘5’
+select chc
+case ‘1’
+c = a+b
+disp(c)
+case ‘2’
+c = a – b
+disp(c)
+case ‘3’ 
+c = a ^ b
+disp(c)
+case ‘4’
+c = a / b
+disp(c)
+else
+disp(“ Enter the number between 1 to 4 “)
+end
+
+
+
+output:
+
+-----> 12
+
+
+
+
+
+
+Result:
+
+Thus the given program is verified and executed successfully using scilab.
+
+
+
+
+
+Ex No: 7
+
+DECIMAL TO BINARY CONVERSION
+
+Aim: 
+To write a program for decimal to binary conversion using SCILAB. 
+
+
+
+Procedure:
+
+Step 1 : Start the program 
+Step 2 : Get the input values 
+Step3: Using dec2 bin(), convert the given decimal value into binary and store it in another variable. 
+Step 4: Display the stored value 
+Step 5: End the program 
+
+
+
+Program: 
+clc
+c = input(“Enter a decimal number: “); 
+x = dec2 bin(c); 
+disp(“Binary number: “);
+disp(x); 
+
+
+
+output: 
+Enter the decimal number: 10
+“Binary number of given value is: 1010
+	Enter the decimal number: 17 
+“Binary number of given value is: /*
+
+
+
+Result:
+Thus the given program is verified and executed successfully
+
+
+
+
+Ex No: 8    
+2D PLOTTING GRAPH
+
+
+Aim:
+ To write a program   plot a graph using 2D plotting function using SCILAB.
+
+
+
+
+
+
+Procedure:
+Step1: Start the program
+Step2: Give the range of X  0.0:1:10
+Step3: Let y  sin(x\ and z= sin(2**)
+Step4: Display the stored value
+Plot (x,y) :graph
+Step5: Use if function and plot the graph : plot(X,Z.’0’)
+
+
+
+
+
+Program:
+X = 0.0:1:10
+ y  sin(x)
+ Z= sin(2*a)
+ Plot(x,y)
+ Clc
+ plot(X,Z.’0’)
+
+Output
+
+
+Result: 
+Thus the given program is verified and executed successfully using SCILAB
+
+
+
+
+
+Ex No: 9
+
+
+SOLVE LINEAR EQUATION
+
+Aim:
+
+To write and execute a program for solving linear equations using SCILAB.
+
+
+Procedure:
+
+Step 1: start the program.
+
+Step 2:Insert the value of matrices A and B.
+
+Step 3:Perform the equation using the input function on matrices A and B.
+
+Step 4:Display the result.
+
+Step 5:Stop the program.
+
+Program:
+
+clc;
+m=input('How many linear equations do you want?');
+n=m;
+disp('Enter the coefficients for the no. of linear equations: ');
+for i=1:m
+for j=1:n
+A(i,j)=input('\');
+end
+end
+disp('The coefficients in the matrix form is: ');
+disp(A);
+disp('Enter the RHS of the equation: ');
+for i=1:m
+Y(i)=input('\');
+end
+disp('The RHS of equation in matrix form is: ');
+X=A\Y;
+disp('Solution of linear equations is');
+disp(X);
+
+
+Output:
+Solve this system of linear equations in matrix form by using linsolve.
+A = [ 2 1  1;
+	 -1 1 -1;
+      1 2  3];
+
+B = [2; 3; -10];
+
+X = linsolve(A,B)
+X =
+     3
+     1
+    -5
+From X, x = 3, y = 1 and z = –5.
+
+ Result:
+	Thus the program executed and verified successfully using SCILAB
+
+
+
+
+Ex No: 10
+
+SOLUTION OF LINEAR EQUATIONS FOR UNDERDETERMINED AND OVER DETERMINED CASES. 
+
+Aim:
+	
+To write a program to solve the linear equation for undetermined and over-determined.
+
+Procedure:
+
+Step 1: start the program.
+Step 2: get the value of several rows and columns and elements of matrix a using for 	loop
+Step 3: get the value of several rows and columns and elements of matrix b using for loop.
+Steps 4: get the result for undetermined using pinv() function of a multiplied with b
+Steps 5: get the over determine using / symbol and display both results.
+Step  6: stop the program.
+
+
+Program:
+
+clc
+m=input('Enter the no of a row of matrix A: ')
+n=input('Enter the no of column of matrix A: ')
+for i=1:m
+for j=1:n
+mprintf('Enter the element no (%d,%d): ',i,j)
+A(i,j)=input('')
+end
+end
+m=input('Enter the no of a row of matrix B:')
+n=input('Enter the no of column of matrix B: ')
+for i=1:m
+for j=1:n
+mprintf('Enter the element no (%d,%d): ',i,j)
+B(i,j)=input('')
+end
+end
+C=pinv(A)*B
+Disp('Output1(print): ',C)
+C1=A\B
+disp('Output2(\)',C1)
+
+
+Output:
+
+There is a unique solution, which is:
+x =
+    2.0000
+   -0.5000
+    1.5000
+
+
+>> size(a)
+ans =
+       5    45
+
+Result:
+
+Thus the above program has been executed successfully using SCILAB.
+
+
+
+
+Ex No: 11
+
+DETERMINATION OF EIGEN VALUES AND EIGEN VECTORS OF A SQUARE MATRIX.
+
+
+Aim:
+To write a program to determine Eigen value an Eigen vectors of the square matrix.
+
+
+Procedure:
+	
+Step 1: start the program.
+Step 2: Get the value of matrix a b and c.
+Step 3: Find the gun values of each matrix using the spec () function.
+Step 4: Get the Eagan vectors using the formula [c,a]=spec(a)
+Step 5: Display the result.
+Step 6: stop the program.
+
+
+Program:
+clc
+clear
+m=input('Enter the no of row of matrix A: ')
+n=input('Enter the no of column of matrix A: ')
+for i=1:m
+for j=1:n
+mprintf('Enter the element no (%d,%d): ',i,j)
+A(i,j)=input('')
+end
+end
+[eValeVect]=spec(A)
+disp('Eigen values: ',eVal)
+disp('Eigen vectors: ',eVect)
+
+
+Output:
+
+
+Result:
+
+Thus the program has been executed successfully using SCILAB.
+
+
+
+
+Ex.no:15
+
+
+
+ROOTS OF POLYNOMIAL
+
+	Aim:
+
+	To write a program determine polynomial roots.
+
+
+Procedure:
+	Step 1: Start the program
+	Step 2: Get the value of degree of polynomial
+	Step 3: Using for loop get coefficient of x
+	Step 4: Get the polynomial expression using poly()function and 					get the roots using roots function
+	Step 5: Display the result
+	Step 6: Stop the program 
+
+Program:
+
+Clc
+ M=input(“Enter the degree of polynomial: “)
+i = 0
+ For i - m+1 :- |:|
+Mprintf(“Enter the co-eff of %%d:”;I-1)
+ A(i,i)= input(“”)
+i = i + 1
+ A x(1,i) = A(i,1) 
+ End 
+ P = poly(A,”x”,”co-eff”)
+ R = roots(Ax)
+disp(P,”Polynomial”)
+disp(R,”Roots of polynomial”)
+
+Output:
+
+	p = [3 -2 -4];
+	r = roots(p)
+	r = 2×1
+
+    1.5352
+   	-0.8685
+
+Result:
+	Thus the given program has been executed successfully
